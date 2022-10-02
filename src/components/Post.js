@@ -8,6 +8,10 @@ const Post = (props) => {
       setOnline((prevOnline) => !prevOnline);
       props.setCount((prevCount) => prevCount - 1);
     }
+
+    if (props.count === 0) {
+      props.setCount(() => 0);
+    }
   };
 
   return (
