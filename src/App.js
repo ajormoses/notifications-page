@@ -65,7 +65,7 @@ function App() {
           recent="5m ago"
         />
         <Post
-          avatar="avatar-jacob-Thompson.webp"
+          avatar="avatar-jacob-thompson.webp"
           name="Jacob Thompson"
           firstMessage="has joined your group"
           secondMessage="Chess Club"
