@@ -3,12 +3,9 @@ import React, { useState } from "react";
 const Post = (props) => {
   // const [read, setRead] = useState(false);
   // const [background, setBackground] = useState("hsl(211, 68%, 94%)");
-  // const buttonRef = useRef(null);
 
   const handleClick = () => {
     if (props.online === true) {
-      // buttonRef.current.disabled = true;
-      // props.online.current.disabled = true;
       props.setBackground(() => "#fff");
       props.setRead(() => true);
       props.setCount((prevCount) => prevCount - 1);
