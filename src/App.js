@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Post from "./components/Post";
-// import data from "./data";
 
 function App() {
   const [count, setCount] = useState(3);

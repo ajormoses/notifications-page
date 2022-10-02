@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 
 const Post = (props) => {
-  // const [read, setRead] = useState(false);
-  // const [background, setBackground] = useState("hsl(211, 68%, 94%)");
   const [online, setOnline] = useState(props.online);
-  // const [read, setRead] = useState(props.read);
 
   const handleClick = () => {
     if (online === true) {
-      // setBackground(() => "#fff");
-      // setRead((prevRead) => !prevRead);
       setOnline((prevOnline) => !prevOnline);
       props.setCount((prevCount) => prevCount - 1);
-    }
-
-    if (props.count == 0) {
-      props.setCount(0);
     }
   };
 
@@ -25,9 +16,7 @@ const Post = (props) => {
         className="post"
         onClick={handleClick}
         style={
-          props.online
-            ? { background: props.background }
-            : { background: "#fff" }
+          online ? { background: props.background } : { background: "#fff" }
         }
       >
         <img
@@ -39,7 +28,7 @@ const Post = (props) => {
           <span className="name">{props.name}</span> {props.firstMessage}{" "}
           <span style={{ color: "hsl(219, 12%, 42%)", fontWeight: "800" }}>
             {props.secondMessage}{" "}
-            {props.online == true && (
+            {online == true && (
               <div
                 className="circle"
                 style={

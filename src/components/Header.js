@@ -2,9 +2,9 @@ import React from "react";
 
 const Header = (props) => {
   const handleClick = () => {
-    props.setCount(0);
+    props.setCount(() => 0);
     props.setBackground("#fff");
-    props.setRead(true);
+    props.setRead((prevRead) => !prevRead);
   };
   return (
     <header>
