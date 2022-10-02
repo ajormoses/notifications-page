@@ -21,7 +21,7 @@ const Post = (props) => {
       >
         <img
           className="avatar"
-          src={`../images/${props.avatar}`}
+          src={`./images/${props.avatar}`}
           alt="avatar mark"
         />
         <div className="post-text">
