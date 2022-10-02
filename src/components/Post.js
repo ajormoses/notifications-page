@@ -49,7 +49,7 @@ const Post = (props) => {
           )}
         </div>
         {props.avatarDisplay && (
-          <img className="avatar-right" src={`../images/${props.avatarLeft}`} />
+          <img className="avatar-right" src={`./images/${props.avatarLeft}`} />
         )}
       </div>
     </div>
