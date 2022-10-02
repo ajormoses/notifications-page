@@ -3,11 +3,14 @@ import React, { useState } from "react";
 const Post = (props) => {
   // const [read, setRead] = useState(false);
   // const [background, setBackground] = useState("hsl(211, 68%, 94%)");
+  const [online, setOnline] = useState(props.online);
+  // const [read, setRead] = useState(props.read);
 
   const handleClick = () => {
-    if (props.online === true) {
-      props.setBackground(() => "#fff");
-      props.setRead(() => true);
+    if (online === true) {
+      // setBackground(() => "#fff");
+      // setRead((prevRead) => !prevRead);
+      setOnline((prevOnline) => !prevOnline);
       props.setCount((prevCount) => prevCount - 1);
     }
 
